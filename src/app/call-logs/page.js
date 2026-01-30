@@ -1,11 +1,15 @@
-import React from 'react';
 
-const CallLogs = () => {
+// import CallDetails from "@/component/dashboard/callLogs/CallDetails";
+import CallLogs from "@/component/dashboard/callLogs/CallLogs";
+
+const CallLogsPage = () => {
     return (
         <div>
-            <p>cll loges</p>
+            <CallLogs></CallLogs>
+            {/* <CallDetails ></CallDetails> */}
+          
         </div>
     );
 };
 
-export default CallLogs;
+export default CallLogsPage;
