@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <div className=" bg-[#111B3C] w-[16%] border-r-[1px] border-white">
           <Sidebar />
         </div>
-        <div className="w-[84%]   ">
+        <div className="w-[84%] bg-[#193560] text-white   ">
             <Navbar></Navbar>
           {children}</div>
       </div>
