@@ -4,9 +4,7 @@ import DashboardOverview from "@/component/dashboard/DashboardOverview";
 
 export default function Home() {
   return (
-    <div className="bg-[#2B7FFF33]">
-      {/* <Navbar></Navbar> */}
-
+    <div >
       <DashboardOverview></DashboardOverview>
       <AreaChartComponent></AreaChartComponent>
       <DashboardActivity></DashboardActivity>

@@ -1,17 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from 'next/font/google'
 import "./globals.css";
 import Sidebar from "@/component/shared/Sidebar";
 import Navbar from "@/component/shared/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: "--font-inter", 
+})
+ 
 
 export const metadata = {
   title: "Create dashboard",
@@ -20,20 +17,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        
       >
-    <div className="min-h-screen ">
-      <div className="flex justify-between ">
-        <div className=" bg-[#111B3C] w-[16%] border-r-[1px] border-white">
-          <Sidebar />
+        <div className="h-screen overflow-hidden">
+          <div className="flex h-full">
+            <aside className="w-[16%] bg-[#111B3C] border-r border-white h-full overflow-hidden">
+              <Sidebar />
+            </aside>
+
+            <main className="w-[84%] bg-[#193560] text-white h-full flex flex-col">
+              <Navbar />
+
+              <div className="flex-1 overflow-y-auto ">{children}</div>
+            </main>
+          </div>
         </div>
-        <div className="w-[84%] bg-[#193560] text-white   ">
-            <Navbar></Navbar>
-          {children}</div>
-      </div>
-    </div>
       </body>
     </html>
   );

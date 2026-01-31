@@ -5,9 +5,7 @@ import CallDetails from "./CallDetails";
 const CallLogs = () => {
   return (
     <div className="px-8 py-6">
-      <main className="flex gap-6 items-start"> 
-        
-       
+      <main className="flex gap-6 items-start">
         <section className="w-[45%]">
           <div className="relative">
             <IoSearchOutline className="absolute left-4 top-1/2 -translate-y-1/2 text-xl" />
@@ -21,9 +19,8 @@ const CallLogs = () => {
           <CallList />
         </section>
 
-       
-        <section className="w-[55%]"> 
-          <div className="flex gap-6 pl-12"> 
+        <section className="w-[55%]">
+          <div className="flex gap-6 pl-12">
             <select className="bg-[#111B3C]  flex-1 px-4 py-4 rounded-lg">
               <option>Type</option>
             </select>
@@ -34,13 +31,12 @@ const CallLogs = () => {
 
             <select className="bg-[#111B3C]  flex-1 px-4 py-4 rounded-lg">
               <option>Today</option>
-            </select>     
+            </select>
           </div>
-          
+
           <br />
           <CallDetails />
         </section>
-
       </main>
     </div>
   );

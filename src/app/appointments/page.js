@@ -5,7 +5,7 @@ import AppointmentTable from "@/component/dashboard/appointments/AppointmentTabl
 
 const Appointments = () => {
     return (
-        <div className="space-y-6">
+        <div className="">
            <AppointmentSystem></AppointmentSystem>
            <AppointmentTable />
          

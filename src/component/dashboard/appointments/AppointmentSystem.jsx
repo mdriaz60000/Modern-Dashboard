@@ -54,17 +54,17 @@ const AppointmentSystem = () => {
         ))}
       </div>
 
-      <div className=" py-2 rounded bg-linear-to-t from-[#1A1A2E] to-[#16213E]">
+      <div className=" py-4 rounded bg-linear-to-t from-[#1A1A2E] to-[#16213E]">
         <label className="mb-2 px-2">Booking Link</label>
-        <div className="flex items-center ">
+        <div className="flex items-center gap-2 px-4 py-2 ">
           <input
             type="text"
             placeholder="https://techstore.com/book?id=store123"
-            className=" w-full rounded-md bg-[#1a2942] px-4 py-2"
+            className=" w-full rounded-md bg-[#1a2942] px-4 py-3 placeholder-white"
           />
-          <button className=" px-2 py-2 border">
-            {" "}
-            <FaRegCopy /> <span>Copy Link</span>
+          <button className=" sidebar-active px-2 py-2 border flex items-center gap-2  ">
+            
+            <FaRegCopy /> <span>CopyLink</span>
           </button>
         </div>
       </div>

@@ -1,35 +1,28 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { useState } from 'react'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import Image from "next/image";
+import { useState } from "react";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { FaRegEdit } from "react-icons/fa";
 
 const ProfileSettings = () => {
-  const [isEditing, setIsEditing] = useState(false)
+  const [isEditing, setIsEditing] = useState(false);
 
   return (
     <TabGroup>
-      <div className="bg-[#193560] h-screen p-8 text-white">
-  
+      <div className="bg-[#193560] mini-h-screen p-8 text-white">
         <TabList className="flex gap-8 mb-8 text-[24px]">
-          <Tab className="">
-            Profile
-          </Tab>
-          <Tab className="">
-            Password Settings
-          </Tab>
+          <Tab className="">Profile</Tab>
+          <Tab className="">Password Settings</Tab>
         </TabList>
 
         <TabPanels>
-       
           <TabPanel>
-           
             <div className="mb-8">
               <p className="text-[20px] mb-4">Profile Image</p>
 
               <section className="flex items-end gap-4">
-                <div className="w-[102px] h-[102px] rounded-full overflow-hidden">
+                <div className="w-25 h-25 rounded-full overflow-hidden">
                   <Image
                     src="/Elipse 5.png"
                     width={102}
@@ -46,17 +39,20 @@ const ProfileSettings = () => {
                              hover:bg-white hover:text-[#193560]
                              transition-all duration-200 mb-2"
                 >
-                  {isEditing ? <FaRegEdit className='text-2xl' /> : 'Edit Profile'}
+                  {isEditing ? (
+                    <FaRegEdit className="text-2xl" />
+                  ) : (
+                    "Edit Profile"
+                  )}
                 </button>
               </section>
             </div>
 
-        
             {isEditing ? (
-              <div className="space-y-6 text-[20px] w-[952px]">
+              <div className="space-y-6 text-[20px] w-238">
                 {/* row 1 */}
                 <section className="flex gap-8">
-                  <div className="flex flex-col w-[460px]">
+                  <div className="flex flex-col w-115">
                     <label className="mb-2">Full Name</label>
                     <input
                       type="text"
@@ -65,7 +61,7 @@ const ProfileSettings = () => {
                     />
                   </div>
 
-                  <div className="flex flex-col w-[460px]">
+                  <div className="flex flex-col w-115">
                     <label className="mb-2">Email</label>
                     <input
                       type="email"
@@ -77,7 +73,7 @@ const ProfileSettings = () => {
 
                 {/* row 2 */}
                 <section className="flex gap-8">
-                  <div className="flex flex-col w-[460px]">
+                  <div className="flex flex-col w-115">
                     <label className="mb-2">Store Name</label>
                     <input
                       type="text"
@@ -86,7 +82,7 @@ const ProfileSettings = () => {
                     />
                   </div>
 
-                  <div className="flex flex-col w-[460px]">
+                  <div className="flex flex-col w-115">
                     <label className="mb-2">Store Address</label>
                     <input
                       type="text"
@@ -127,7 +123,6 @@ const ProfileSettings = () => {
             )}
           </TabPanel>
 
-       
           <TabPanel>
             <div className="text-[20px]">
               <p>Password settings content here...</p>
@@ -136,7 +131,7 @@ const ProfileSettings = () => {
         </TabPanels>
       </div>
     </TabGroup>
-  )
-}
+  );
+};
 
-export default ProfileSettings
+export default ProfileSettings;
