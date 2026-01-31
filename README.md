@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📊 Call Management Dashboard
 
-## Getting Started
+A modern **Call Management Dashboard** built with **Next.js**, **Headless UI**, **Tailwind CSS**, and **Recharts**. This application helps track call performance, manage appointments, and monitor service workflows from a single, clean interface.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Dashboard Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+High-level insights and analytics for daily operations.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔹 Key Metrics
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Total Calls** – Total number of calls received
+* **Average Call Duration** – Average duration per call
+* **Blocked Calls** – Calls blocked manually or by AI rules
 
-## Learn More
+### 🔹 Call Trends (This Week)
 
-To learn more about Next.js, take a look at the following resources:
+* Weekly call analytics using charts
+* Identify peak days and usage patterns
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔹 Recent Activity
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Latest call updates and system actions
+* Status changes, bookings, and interactions
 
-## Deploy on Vercel
+### 🔹 Top Repair Requests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Most frequently requested repair/services
+* Helps prioritize operations and inventory
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📞 Call List
+
+Manage and monitor all incoming and outgoing calls.
+
+### 🔍 Search & Sort
+
+* Search by phone number or status
+* Sort by date, duration, or call type
+
+### 📋 Call Records
+
+Each call includes:
+
+* Phone number
+* Date & time
+* Call duration
+* Status (Completed, Blocked, Quote Provided, etc.)
+* Category (Screen, Battery, Hardware, etc.)
+
+### 📄 Call Details
+
+* Detailed call information view
+* Notes, history, and status updates
+
+---
+
+## 📅 Appointments
+
+Complete appointment and service management system.
+
+### 🧱 Appointment Status
+
+* **Blocked** – Manually blocked appointments
+* **AI Blocked** – Automatically blocked by AI logic
+* **Pending** – Awaiting confirmation
+
+### 🔗 Booking Link
+
+* Auto-generated customer booking link
+* Easy copy & share
+
+### 🛠 Service Table
+
+* Service type
+* Customer information
+* Appointment date & time
+* Current status
+
+---
+
+## ⚙️ Settings
+
+### 👤 Profile
+
+* Update profile information
+* Manage personal details and avatar
+
+---
+
+## 🛠 Tech Stack
+
+* **Framework:** Next.js
+* **UI Components:** Headless UI
+* **Styling:** Tailwind CSS
+* **Charts:** Recharts
+* **Icons:** React Icons
+
+---
+
+## 🧩 Features
+
+* Responsive dashboard UI
+* Real-time call analytics
+* Advanced search & filtering
+* Appointment management
+* AI-based call blocking
+
+---
+
+## 📌 Future Enhancements
+
+* Role-based access control (Admin, Agent)
+* Export reports (CSV / PDF)
+* Notifications & alerts
+* Advanced AI call insights
+
+---
+
+## 📄 License
+
+This project is intended for educational and internal use.
+
+---
+
+> Built with ❤️ using Next.js & Tailwind CSS
