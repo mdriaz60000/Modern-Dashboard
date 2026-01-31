@@ -36,7 +36,7 @@ const DashboardActivity = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 lg:px-8 py-6">
       <div className="bg-[#111B3C] rounded-lg border border-blue-900/30 p-6">
         <h2 className="text-white text-lg font-semibold mb-6">
           Recent Activity
@@ -45,7 +45,7 @@ const DashboardActivity = () => {
           {recentActivities.map((activity) => (
             <div
               key={activity.id}
-              className="flex items-start bg-[#1D293D80] p-4 gap-3 "
+              className="flex items-start bg-[#1D293D80] p-4 gap-3 hover:border border-white"
             >
               <div
                 className={`${activity.color} w-2 h-2  rounded-full mt-2 flex-shrink-0`}

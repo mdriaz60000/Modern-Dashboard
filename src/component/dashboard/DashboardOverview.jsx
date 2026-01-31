@@ -52,12 +52,12 @@ const DashboardOverview = () => {
   ];
 
   return (
-    <div className=" px-8 py-6">
-      <div className="  grid grid-cols-3 gap-4 ">
+    <div className=" px-4 md:px-8 py-6">
+      <div className="  grid md:grid-cols-1 lg:grid-cols-3  gap-4 ">
         {calculation.map((item, index) => (
           <div
             key={index}
-            className="bg-[#111B3C]  flex justify-between  p-8 rounded-xl"
+            className="bg-[#111B3C]  flex justify-between  p-8 rounded-xl hover:border border-white"
           >
             <section className=" space-y-2">
               <p className="text-sm">{item.name}</p>

@@ -16,7 +16,8 @@ const CallList = () => {
       duration: "5:23",
       status: "Quote Provided",
       category: "Screen",
-      statusColor: "bg-linear-to-r from-[#00C95033] to-[#00BC7D33] text-[#05DF72]",
+      statusColor:
+        "bg-linear-to-r from-[#00C95033] to-[#00BC7D33] text-[#05DF72]",
       categoryColor: "bg-blue-500/20 text-blue-400",
       icon: BsCheckCircleFill,
     },
@@ -29,7 +30,8 @@ const CallList = () => {
       status: "Warm Transfer",
       category: "Software",
       statusColor: "bg-orange-500",
-     statusColor: "bg-linear-to-r from-[#FF690033] to-[#FB2C3633] text-[#FF8904]",
+      statusColor:
+        "bg-linear-to-r from-[#FF690033] to-[#FB2C3633] text-[#FF8904]",
       icon: BsCheckCircleFill,
     },
     {
@@ -41,7 +43,8 @@ const CallList = () => {
       status: "Appointment ",
       category: "Battery",
       statusColor: "bg-blue-600",
-     statusColor: "bg-linear-to-r from-[#2B7FFF33] to-[#00B8DB33] text-[#51A2FF]",
+      statusColor:
+        "bg-linear-to-r from-[#2B7FFF33] to-[#00B8DB33] text-[#51A2FF]",
       icon: FaCalendarCheck,
     },
     {
@@ -53,7 +56,8 @@ const CallList = () => {
       status: "Call Dropped",
       category: "Unknown",
       statusColor: "bg-red-600",
-      statusColor: "bg-linear-to-r from-[#FF150033] to-[#FB2C3633] text-[#FF0404]",
+      statusColor:
+        "bg-linear-to-r from-[#FF150033] to-[#FB2C3633] text-[#FF0404]",
       icon: MdCancel,
     },
     {
@@ -65,7 +69,8 @@ const CallList = () => {
       status: "Quote Provided",
       category: "Screen",
       statusColor: "bg-[#00C950]",
-      statusColor: "bg-linear-to-r from-[#00C95033] to-[#00BC7D33] text-[#05DF72]",
+      statusColor:
+        "bg-linear-to-r from-[#00C95033] to-[#00BC7D33] text-[#05DF72]",
       icon: BsCheckCircleFill,
     },
   ];

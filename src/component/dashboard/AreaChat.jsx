@@ -21,7 +21,7 @@ const AreaChartComponent = () => {
   ];
 
   return (
-    <main className="px-8">
+    <main className="px-4 lg:px-8">
       <div className="w-full bg-[#111B3C] rounded-lg border border-blue-900/30 p-6">
         <div className="flex items-center justify-between mb-6">
           <div>

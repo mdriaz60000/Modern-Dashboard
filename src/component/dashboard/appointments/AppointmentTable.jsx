@@ -1,4 +1,3 @@
-import React from "react";
 import {
   MdKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
@@ -110,11 +109,11 @@ const AppointmentTable = () => {
   const pages = [1, 2, 3, 4, 5];
 
   return (
-    <main className=" px-8">
-      <div className=" bg-[#111B3B]">
-        <table className="w-full border-collapse text-left ">
-          <thead>
-            <tr className="border-b ">
+    <main className="px-4 lg:px-8">
+      <div className="overflow-x-auto bg-[#111B3B] rounded-lg">
+        <table className="w-full min-w-[700px] border-collapse text-left">
+          <thead className="bg-[#0f1530]">
+            <tr className="border-b border-gray-500">
               <th className="py-3 px-2">Client Name</th>
               <th className="py-3 px-2">Client Phone</th>
               <th className="py-3 px-2">Client Email</th>
@@ -128,7 +127,10 @@ const AppointmentTable = () => {
 
           <tbody>
             {appointments.slice(0, 6).map((item, index) => (
-              <tr key={index} className="border-b border-gray-200 ">
+              <tr
+                key={index}
+                className="border-b border-gray-700 hover:bg-[#1A2942] transition-colors"
+              >
                 <td className="py-3 px-2 text-[#51A2FF]">{item.clientName}</td>
                 <td className="py-3 px-2">{item.clientPhone}</td>
                 <td className="py-3 px-2">{item.clientEmail}</td>
@@ -143,26 +145,31 @@ const AppointmentTable = () => {
         </table>
       </div>
 
-      <div className="flex items-center justify-center gap-2 mt-8 text-bold ">
-        <button className="px-2 py-1 ">
+      <div className="flex flex-wrap items-center justify-center gap-2 mt-8 font-semibold">
+        <button className="px-2 py-1 flex items-center justify-center">
           <MdKeyboardArrowLeft />
         </button>
 
-        <button className="">Previous</button>
+        <button className="px-2 py-1 rounded hover:bg-[#243552] transition-colors">
+          Previous
+        </button>
 
         {pages.map((page) => (
           <button
             key={page}
-            className={` px-2 py-1
-        ${page === 1 ? " text-white" : "hover:bg-bg-[#A6C8FF]"}`}
+            className={`px-2 py-1 rounded ${
+              page === 1 ? "bg-[#51A2FF] text-white" : "hover:bg-[#243552]"
+            } transition-colors`}
           >
             {page}
           </button>
         ))}
 
-        <button className="">Next</button>
+        <button className="px-2 py-1 rounded hover:bg-[#243552] transition-colors">
+          Next
+        </button>
 
-        <button className="">
+        <button className="px-2 py-1 flex items-center justify-center">
           <MdOutlineKeyboardArrowRight />
         </button>
       </div>
